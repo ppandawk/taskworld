@@ -15,6 +15,11 @@
     	background-repeat: no-repeat;
 		background-image: url("../img/bg-sec3.png");
 	}
+	&.footer{
+		padding: 0 135px;
+		width: 100%;
+  		border-top: solid 1px #979797; 
+	}
 }
 
 .bg-only{
@@ -265,6 +270,80 @@
     text-align: center;
     display: block;
 }
+
+.sec-w{
+	width: 100%;
+	display: table;
+	padding: 70px 0 60px;
+	.sw-wrapper{
+		padding: 10px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+.sf-wrapper{
+	overflow: hidden;
+	padding-bottom: 60px;
+	border-bottom: solid 0.5px #696f7a;
+	.sec-f{
+		width: 20%;
+		float: left;
+		ul{
+			padding: 0;
+			list-style: none;
+			margin-top: 50px;
+			line-height: 1.43;
+			.title{
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 8px;
+			}
+			.sub-title{
+				font-size: 14px;
+			}
+			.drop-down{
+				font-size: 14px;
+				border-bottom: solid 1px #8d919a;
+			}
+			.img{
+				img{
+					width: 121px;
+					height: 34px;
+				}
+			}
+		}
+	}
+}
+.real-footer{
+	overflow: hidden;
+	margin: 28px 0 34px;
+	.rf-l{
+		float: left;
+		font-size: 12px;
+		color: #696f7a;
+	}
+	.rf-r{
+		float: right;
+		margin-right: 25px;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				margin-right: 30px;
+				display: inline-block;
+				img{
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
 
 .modal{
   top:0;

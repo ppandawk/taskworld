@@ -69,6 +69,15 @@ class App extends React.Component {
 				{id:"4",src: "../assets/img/feature/4.png",title: "Dedicated",title2: "account manager"},
 				{id:"5",src: "../assets/img/feature/5.png",title: "SLA",title2: "(Service Level Agreements)"},
 				{id:"6",src: "../assets/img/feature/6.png",title: "Privacy Shield",title2: "certified"}
+			],
+			warrantyList: [
+				{id:"1",src: "../assets/img/warranty/1.png"},
+				{id:"2",src: "../assets/img/warranty/2.png"},
+				{id:"3",src: "../assets/img/warranty/3.png"},
+				{id:"4",src: "../assets/img/warranty/4.png"},
+				{id:"5",src: "../assets/img/warranty/5.png"},
+				{id:"6",src: "../assets/img/warranty/6.png"},
+				{id:"7",src: "../assets/img/warranty/7.png"}
 			]
 		}
 	}
@@ -132,6 +141,11 @@ class App extends React.Component {
 	    			<br />
 	    			{item.title2}
 	    		</div>
+	    	</div>
+	    );
+	    const wList = this.state.warrantyList.map((item,index) =>
+	    	<div className="sw-wrapper">
+				<img src={item.src}/>
 	    	</div>
 	    );
 		return (
@@ -211,6 +225,85 @@ class App extends React.Component {
 				<div className={ !this.state.condition ? "modal close" : "modal open" }>
 					<div className="modal-inner">
 						<iframe src="https://player.vimeo.com/video/161882460?autoplay=1" frameBorder="0" allowFullScreen className="frame"></iframe>
+					</div>
+				</div>
+				<div className="container-sec">
+					<div className="sec-w">
+						{wList}
+					</div>
+				</div>
+				<div className="container-sec footer">
+					<div className="sf-wrapper">
+						<div className="sec-f">
+							<ul>
+								<li className="title">Taskworld Inc.</li>
+								<li className="sub-title">
+									28 Valley Road, Suite#1 
+									<br />
+									Montclair, NJ 07042
+								</li>
+								<li>&nbsp;</li>
+								<li className="sub-title">+(1) 866 428 9571</li>
+								<li className="sub-title">support@taskworld.com</li>
+							</ul>
+						</div>
+						<div className="sec-f">
+							<ul>
+								<li className="title">Solutions</li>
+								<li className="sub-title">Product</li>
+								<li className="sub-title">Enterprise</li>
+								<li className="sub-title">Pricing</li>
+								<li className="sub-title">Success Stories</li>
+							</ul>
+						</div>
+						<div className="sec-f">
+							<ul>
+								<li className="title">Company</li>
+								<li className="sub-title">About us</li>
+								<li className="sub-title">Careers</li>
+								<li className="sub-title">Press & media</li>
+								<li className="sub-title">Blog</li>
+								<li className="sub-title">Contact us</li>
+								<li className="sub-title">Terms, privacy & security</li>
+							</ul>
+						</div>
+						<div className="sec-f">
+							<ul>
+								<li className="title">Resources</li>
+								<li className="sub-title">User guide</li>
+								<li className="sub-title">Getting started</li>
+								<li className="sub-title">Taskworld basics</li>
+								<li className="sub-title">Youtube channel</li>
+								<li className="sub-title">Use cases</li>
+							</ul>
+						</div>
+						<div className="sec-f">
+							<ul>
+								<li className="title">Choose Your Language</li>
+								<li className="drop-down">English</li>
+								<li>&nbsp;</li>
+								<li className="title">Mobile Apps</li>
+								<li className="img">
+									<img src="../assets/img/logo/as.png"/>
+								</li>
+								<li className="img">
+									<img src="../assets/img/logo/gp.png"/>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div className="real-footer">
+						<div className="rf-l">
+							Copyright © 2013-2017 Taskworld™. Pat. Pend. All rights reserved.    •    Terms, Privacy & Security
+						</div>
+						<div className="rf-r">
+							<ul>
+								<li><img src="../assets/img/icon/ic-facebook.png" /></li>
+								<li><img src="../assets/img/icon/ic-twitter.png" /></li>
+								<li><img src="../assets/img/icon/ic-google.png" /></li>
+								<li><img src="../assets/img/icon/ic-linkedin.png" /></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
